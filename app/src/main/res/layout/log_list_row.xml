@@ -1,0 +1,117 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutRow"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_rounded_corners"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/p_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:text="Stok Girişi/Çıkışı"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:id="@+id/p_details_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/p_name_layout"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/customer_label"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Müşteri"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@color/LimeGreen"
+                android:textColor="@color/White"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/quantity_label"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Adet"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@color/LimeGreen"
+                android:textColor="@color/White"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Tarih"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@color/LimeGreen"
+                android:textColor="@color/White"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_details_value_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/p_details_layout"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/customer"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Müşteri"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Adet"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:text="Tarih"
+                android:textStyle="normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</TableRow>

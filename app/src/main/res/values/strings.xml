@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Stok Takip</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_remove_button_string">Stok \nEkle/Çıkar</string>
+    <string name="delete_update_button_string">Stok \nSil/Güncelle</string>
+    <string name="product_list_button_string">Stok Listesi</string>
+    <string name="new_product_string">Yeni Ürün Ekle</string>
+    <string name="title_activity_product_view">ProductView</string>
+    <string name="add_button_text">EKLE</string>
+    <string name="update_button_text">DÜZENLE</string>
+    <string name="delete_button_text">SİL</string>
+    <string name="add_remove_unit_button_text">EKLE/ÇIKAR</string>
+    <string name="add_unit_button_text">STOK EKLE</string>
+    <string name="remove_unit_button_text">STOK ÇIKAR</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_aaaaaa">aaaaaaaa</string>
+</resources>

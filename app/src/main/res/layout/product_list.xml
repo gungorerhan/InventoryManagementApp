@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/LightGrey"
+    tools:context=".ListProducts">
+
+    <SearchView
+        android:background="@color/Green"
+        android:queryBackground="@color/White"
+        android:id="@+id/search_view"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Ürün Adı/Kodu/Açıklama Ara"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/all_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/search_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/all_products_table_layout"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_new_product_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:elevation="4dp"
+        android:focusable="true"
+        android:backgroundTint="@color/IndianRed"
+        android:tint="@color/White"/>
+
+</RelativeLayout>

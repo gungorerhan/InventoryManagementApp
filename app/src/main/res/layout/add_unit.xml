@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/LightGrey">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Green"
+        app:titleTextColor="@color/White"
+        app:title="Ürün Detayları"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        style="@style/padding_product_view"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/product_name_layout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Ürün Adı:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/editText"
+            android:paddingStart="4dp"
+            android:text="Ürün Adı"
+            android:background="@color/White"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/padding_product_view"
+        android:id="@+id/card_no_layout"
+        android:layout_below="@id/product_name_layout">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Kart Kodu:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_no"
+            style="@style/editText"
+            android:background="@color/White"
+            android:paddingStart="4dp"
+            android:text="Kart Kodu"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/padding_product_view"
+        android:id="@+id/model_no_layout"
+        android:layout_below="@id/card_no_layout">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Marka/Model:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/model_no"
+            style="@style/editText"
+            android:background="@color/White"
+            android:text="Marka/Model"
+            android:paddingStart="4dp"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_buy_layout"
+        android:layout_below="@id/model_no_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Alış Fiyatı:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/price_buy"
+            style="@style/editText"
+            android:background="@color/White"
+            android:text="Alış Fiyatı"
+            android:paddingStart="4dp"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_sell_layout"
+        android:layout_below="@id/price_buy_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Satış Fiyatı:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/price_sell"
+            style="@style/editText"
+            android:text="Satış Fiyatı"
+            android:paddingStart="4dp"
+            android:background="@color/White"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/place_layout"
+        android:layout_below="@id/price_sell_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Yeri:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/place"
+            style="@style/editText"
+            android:text="Yeri"
+            android:paddingStart="4dp"
+            android:background="@color/White"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quantity_layout"
+        android:layout_below="@id/place_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Ürün Adedi:"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/editText"
+            android:text="Ürün Adedi"
+            android:paddingStart="4dp"
+            android:background="@color/White"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_below="@id/quantity_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Açıklama:"
+            android:layout_height="match_parent"
+            android:inputType="none">
+        </TextView>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/editText"
+            android:text="Açıklama"
+            android:layout_height="54dp"
+            android:paddingStart="4dp"
+            android:background="@color/White"
+            android:inputType="none">
+        </TextView>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar0"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/description_layout"
+        android:background="@color/Green"
+        app:titleTextColor="@color/White"
+        app:title="Stok Ekle / Çıkar"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/customer_layout"
+        android:layout_below="@id/toolbar0"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Müşteri:"
+            android:inputType="none">
+        </TextView>
+
+        <EditText
+            android:id="@+id/customer"
+            style="@style/editText"
+            android:background="@color/White"
+            android:paddingStart="4dp"
+            android:hint="Müşteri/Şirket Adı"
+            android:inputType="none">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/add_unit_layout"
+        android:layout_below="@id/customer_layout"
+        style="@style/padding_product_view">
+
+        <TextView
+            style="@style/product_view_txt_element"
+            android:text="Adet:"
+            android:inputType="none">
+        </TextView>
+
+        <EditText
+            android:id="@+id/unit"
+            style="@style/editText"
+            android:background="@color/White"
+            android:paddingStart="4dp"
+            android:hint="Eklenecek Ürün Adedi"
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/add_unit_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- ADD UNIT BUTTON-->
+
+        <Button
+            android:id="@+id/add_unit_button"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/layout_rounded_corners"
+            android:backgroundTint="@color/buttonRed"
+            android:text="@string/add_unit_button_text"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <!-- REMOVE UNIT BUTTON -->
+
+        <Button
+            android:id="@+id/remove_unit_button"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded_corners"
+            android:backgroundTint="@color/buttonRed"
+            android:text="@string/remove_unit_button_text"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
